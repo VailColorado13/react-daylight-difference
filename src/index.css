@@ -1,0 +1,153 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #4E6B41;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.stableUI {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #87CEEB;
+  border-radius: 5px;
+}
+
+.stableUI h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.stableUI h2 {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.search-bar .search-input {
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.search-bar .search-button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007aff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-bar .search-button:hover {
+  background-color: #0056b3;
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  color: #333;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.option-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.option-button:hover {
+  background-color: #ccc;
+}
+
+.option-button:active {
+  background-color: #aaa;
+  transform: scale(0.98);
+}
+
+.option-button.clicked {
+  background-color:  #FFFDE7;
+  outline: 3px solid #FFD700;
+}
+
+.attributionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attributionsContainer > span {
+  margin: 4px;
+
+}
+
+.attributions > h5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+
+@media (max-width: 768px) {
+  .stableUI h2 {
+    font-size: 1rem;
+  }
+
+  .stableUI {
+    height: 70vh;
+  }
+
+  .attributionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
