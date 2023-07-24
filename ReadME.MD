@@ -8,8 +8,4 @@
 
 
 
-
-
-
-
 ![](daylight-difference-demo.gif)
