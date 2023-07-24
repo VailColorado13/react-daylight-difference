@@ -12,4 +12,4 @@
 
 
 
-![](daylight-difference demo.gif)
+![](daylight-difference-demo.gif)
